@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="386.0" prefWidth="350.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="control.AddPersonController">
+   <children>
+      <AnchorPane prefHeight="79.0" prefWidth="350.0" style="-fx-background-color: #48A5EA;">
+         <children>
+            <Label layoutX="69.0" layoutY="22.0" prefHeight="34.0" prefWidth="208.0" text="Ajouter un abonné" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="23.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <TextField fx:id="teleField" focusTraversable="false" layoutX="64.0" layoutY="219.0" prefHeight="26.0" prefWidth="221.0" promptText="Num. De Tele" />
+      <TextField fx:id="prenomField" focusTraversable="false" layoutX="64.0" layoutY="177.0" prefHeight="26.0" prefWidth="221.0" promptText="Prenom" />
+      <TextField fx:id="nomField" focusTraversable="false" layoutX="63.0" layoutY="133.0" onMouseClicked="#onClickNom" prefHeight="26.0" prefWidth="221.0" promptText="Nom" />
+      <Button fx:id="btnAjouter" layoutX="102.0" layoutY="310.0" mnemonicParsing="false" onAction="#actionAjouter" prefHeight="34.0" prefWidth="142.0" style="-fx-background-color: #48A5EA;" text="Ajouter" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label fx:id="ajouterLabel" layoutX="87.0" layoutY="269.0" text="L'abonné est bien ajouté" textFill="#08a42f" visible="false">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

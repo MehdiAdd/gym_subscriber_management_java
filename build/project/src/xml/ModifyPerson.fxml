@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="626.0" prefWidth="353.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="control.ModifyPersonController">
+   <children>
+      <AnchorPane prefHeight="79.0" prefWidth="358.0" style="-fx-background-color: #48A5EA;">
+         <children>
+            <Label layoutX="132.0" layoutY="22.0" text="Modifier" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="23.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <TextField fx:id="dernierPaiementField" focusTraversable="false" layoutX="106.0" layoutY="271.0" prefHeight="26.0" prefWidth="221.0" promptText="Date" />
+      <TextField fx:id="teleField" focusTraversable="false" layoutX="106.0" layoutY="230.0" prefHeight="26.0" prefWidth="221.0" promptText="Num. De Tele" />
+      <TextField fx:id="prenomField" focusTraversable="false" layoutX="106.0" layoutY="188.0" prefHeight="26.0" prefWidth="221.0" promptText="Prenom" />
+      <TextField fx:id="nomField" focusTraversable="false" layoutX="105.0" layoutY="144.0" prefHeight="26.0" prefWidth="221.0" promptText="Nom" />
+      <Button fx:id="modifierButton" layoutX="105.0" layoutY="560.0" mnemonicParsing="false" onAction="#actionModifier" prefHeight="34.0" prefWidth="142.0" style="-fx-background-color: #48A5EA;" text="Modifier" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <TextField fx:id="idField" disable="true" editable="false" focusTraversable="false" layoutX="106.0" layoutY="102.0" prefHeight="26.0" prefWidth="221.0" promptText="ID" />
+      <Label layoutX="75.0" layoutY="107.0" text="ID" />
+      <Label layoutX="19.0" layoutY="275.0" text="Dernier Paiem." />
+      <Label layoutX="30.0" layoutY="234.0" prefHeight="18.0" prefWidth="66.0" text="Num De Tel." />
+      <Label layoutX="52.0" layoutY="192.0" text="Prenom" />
+      <Label layoutX="68.0" layoutY="148.0" text="Nom" />
+      <TableView fx:id="dateTable" layoutX="45.0" layoutY="317.0" prefHeight="200.0" prefWidth="281.0">
+        <columns>
+            <TableColumn fx:id="iDDate" prefWidth="75.19994831085205" text="IDDate" />
+          <TableColumn fx:id="dates" prefWidth="205.60001525878909" text="Dates" />
+        </columns>
+      </TableView>
+      <Button fx:id="deleteDate" layoutX="44.0" layoutY="517.0" mnemonicParsing="false" onAction="#onDeleteDate" prefHeight="26.0" prefWidth="282.0" style="-fx-background-color: #DD5044;" text="Supprimer une Date" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

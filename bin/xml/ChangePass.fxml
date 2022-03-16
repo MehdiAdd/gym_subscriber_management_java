@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="420.0" prefWidth="350.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="control.ChangePassController">
+   <children>
+      <AnchorPane prefHeight="79.0" prefWidth="350.0" style="-fx-background-color: #48A5EA;">
+         <children>
+            <Label layoutX="42.0" layoutY="22.0" text="Changer le Mot de Passe" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="23.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Button fx:id="btnAjouter" layoutX="104.0" layoutY="347.0" mnemonicParsing="false" onAction="#onBtnAppliquer" prefHeight="34.0" prefWidth="142.0" style="-fx-background-color: #48A5EA;" text="Appliquer" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <PasswordField fx:id="ancienPassField" layoutX="69.0" layoutY="128.0" prefHeight="26.0" prefWidth="214.0" promptText="Ancien mot de passe" />
+      <PasswordField fx:id="nouveauPassField" layoutX="70.0" layoutY="183.0" prefHeight="26.0" prefWidth="214.0" promptText="Nouveau mot de passe" />
+      <PasswordField fx:id="confirmePassField" layoutX="70.0" layoutY="238.0" prefHeight="26.0" prefWidth="214.0" promptText="Confirmer le nouveau mot de passe" />
+      <CheckBox fx:id="afficherCheck" layoutX="69.0" layoutY="285.0" mnemonicParsing="false" onAction="#onAfficherCheck" text="Affciher Le mot de passe" />
+      <Label fx:id="labelError" layoutX="57.0" layoutY="313.0" text="Les mots de passes ne sont pas identiques" textFill="#f50000" visible="false">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelSucces" layoutX="71.0" layoutY="313.0" text="Le mot de passe est changé avec succès" textFill="#02bf44" visible="false">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="ancienTextField" layoutX="70.0" layoutY="128.0" prefHeight="26.0" prefWidth="214.0" visible="false" />
+      <TextField fx:id="confirmeTextField" layoutX="70.0" layoutY="238.0" prefHeight="26.0" prefWidth="214.0" visible="false" />
+      <TextField fx:id="nouveauTextField" layoutX="70.0" layoutY="183.0" prefHeight="26.0" prefWidth="214.0" visible="false" />
+   </children>
+</AnchorPane>
