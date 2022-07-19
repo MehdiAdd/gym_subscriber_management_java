@@ -1,8 +1,10 @@
 <img src="src/images/icon.png" alt="icon" width="200"/>
+
 # MENOUALI GYM
 
 ![](https://img.shields.io/badge/Java-Fx-orange)
-It is a desktop app developed using javaFX as a GYM subscriber management
+
+- It is a desktop app developed using javaFX as a GYM subscriber management
 
 ## Installation & Configuration
 
