@@ -23,7 +23,6 @@ After setting up your environment to jdk 1.8. you are almost done the only thing
 
 ### BackOffice
 
-- As i mentioned. this part is dedicated for admin by which he can manage all the sort of books, users etc...
-- it is accessible after the admin authentication (using admin as email and password)
+- It is the place where the manager can manage the memberships of all subscribers
   ![](images/subscriberManagement.png)
   ![](images/subscriberSearching.png)
