@@ -19,7 +19,7 @@ After setting up your environment to jdk 1.8. you are almost done the only thing
 
 ### Login Page
 
-![](images/home2.gif)
+![](images/home2.png)
 
 ### BackOffice
 
