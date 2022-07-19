@@ -9,7 +9,7 @@
 ## Installation & Configuration
 
 After setting up your environment to jdk 1.8. you are almost done the only thing left is changing database informations connexion to yours. first you have to go to ConnexionDB.java by following the following path "src/models/ConnexionDB.java". secondly, change database name (menouali) to your database name , username (root) as well as the password (i left it empty because i don't use one)
-![](images/connexionDB.png)
+![](images/connexionDB2.png)
 
 ## How to use
 
